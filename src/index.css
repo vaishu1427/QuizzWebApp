@@ -1,0 +1,201 @@
+body {
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} 
+
+
+#mainheading{
+  /* text-align: center;
+  font-family: Verdana;
+  color: black;
+  letter-spacing: 1px; */
+
+  margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Luckiest Guy", cursive;
+	font-size: 60px;
+	letter-spacing: 0.7rem;
+	color: white;
+	background: transparent;
+	text-align: center;
+	mix-blend-mode: multiply;
+	text-shadow: -5px 5px 0px rgb(0, 0, 0), -10px 10px 0px rgb(14, 13, 13);
+  background: url("https://images.unsplash.com/photo-1634151527394-02a59150c521?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNzA4OTMwNA&ixlib=rb-1.2.1&q=85");
+	background-position: top;
+	background-size: cover;
+}
+
+.Card{
+  
+  align-items:center;
+  background-color: powderblue;
+  height: 70px;
+  margin:50px;
+  border-radius: 4px;
+  
+} 
+
+#grad1 { 
+  
+  margin: -22px -8px 0 -22px;
+  background-image: linear-gradient(to right,rgb(8, 8, 8), rgb(20, 131, 139), rgb(116, 215, 223));
+  height: auto;
+}
+
+#elaboration {
+  
+  
+  border: 50px solid transparent;
+  /* border-image-source:linear-gradient(to left,rgb(8, 8, 8), rgb(20, 131, 139), rgb(116, 215, 223)) */
+ 
+  
+} 
+.button1{
+  background-color: #73f2ea;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.5), 0 20px 20px 0 rgba(0,0,0,0.25);
+  color: rgb(9, 9, 9);
+  font-family: Verdana;
+  padding: 15px 100px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+
+#ansbuttons {
+  
+  text-align: center;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2), 0 20px 20px 0 rgba(0,0,0,0.19);
+  background-color: black;
+  color:white;
+  cursor: pointer;
+
+
+}
+
+#startanimation{
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 4%, 11%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family:verdana;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, hsl(0, 3%, 6%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 6%, 7%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+button:disabled,
+button[disabled]{
+  border: 3px solid #b04506;
+  background-color: #8d8686;
+  color: #666666;
+}
+
+.fade-in-text {
+  font-family: verdana;
+  font-size: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+.footer-section {
+  height: 3em;
+  width: 100%;
+  color: aliceblue;
+  background-color: #0c0c0c;
+  
+}
+
+.content2{
+  display:flex;
+  justify-content:center;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+
+}
+
+.content1{
+  display:flex;
+  
+ 
+}
+
+.ml-auto{
+  margin-left: auto;
+  
+}
+
+.flexItems{
+  padding-right: 40px;
+}
+
