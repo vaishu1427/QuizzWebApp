@@ -1,6 +1,7 @@
 import Card from './Card';
 import { useState } from 'react';
-import Createconfetti from './confetti';
+import Confetti from "react-confetti";
+
 
 
 
@@ -114,7 +115,7 @@ function HomePage(){
             }
             
             {
-                shallwestart ? <div id="startanimation"><br/>All the best</div> : <div id="startanimation"><br/><p style={{textAlign:'center'}}>Shall we start ?</p></div>
+                shallwestart ? <div id="startanimation" ><br/>All the best</div> : <div id="startanimation"><br/><p style={{textAlign:'center'}}>Shall we start ?</p></div>
             }
             
             {
@@ -124,24 +125,25 @@ function HomePage(){
                 question.length===totalans ? <div className='center'><button className='button1' onClick={() => handleShowResult()}><b>Show Result</b></button></div> : <div></div>
             }
             {
-                showresult ? <h4 className='fade-in-text' style={{color:"white",fontSize:30,textAlign:'center'}}>You have answered {correctans}/5 successfully.</h4>: <div/>
+                showresult ? <div><h4 className='fade-in-text' style={{color:"white",fontSize:30,textAlign:'center'}}>You have answered {correctans}/5 successfully.<Confetti/></h4></div>: <div/>
             }
             {
                 startquizz ? <div/> : <div className='center'><button className='button1' onClick={() => handleStartQuizz()}><b>Start Quizz</b></button></div>
             }
-
             <h4>.</h4>
+            
 
 
             <footer class="footer-section">
                 <div className='content1'>
+                    <span style={{marginLeft:"550px"}}>Created by Vaishnavi S</span>
                     <span className='flexItems ml-auto'>Privacy</span>
                     <span className='flexItems'>Terms</span>
                     <span className='flexItems'> Contact</span>
                 </div>
-                <div className='content2'>
-                    <span>Created by Vaishnavi S</span>
-                </div>   
+                {/* <div className='content2'>
+                    
+                </div>    */}
             </footer>
         </div>
         
