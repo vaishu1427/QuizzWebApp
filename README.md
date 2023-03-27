@@ -1,6 +1,6 @@
 # QuizzApp
  
-This is a quizz app which is suitable for 3rd grade students.
+This is a quiz app that is suitable for 3rd grade students.
 
 ## Tech Stack Used
 
